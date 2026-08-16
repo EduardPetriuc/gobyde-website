@@ -1,31 +1,40 @@
-# GoByde website
+# GoByde Tech
 
-Website static de prezentare pentru studioul GoByde și jocurile sale. Pagina principală funcționează ca hub, iar fiecare joc publicat are propria pagină de prezentare.
+GoByde Tech is an independent mobile game and app studio based in Romania.
 
-## Rulare locală
+We create focused digital products with clear ideas, distinctive personalities, and experiences that respect people's time. Our goal is to make games and apps that are easy to understand, enjoyable to use, and worth coming back to.
 
-Nu există dependențe sau pas de build. Deschide `index.html` direct sau pornește un server local:
+## What we build
 
-```bash
-python3 -m http.server 8080
-```
+We work on mobile-first products that combine thoughtful design with simple, satisfying interactions.
 
-Apoi vizitează `http://localhost:8080`.
+Our approach is guided by three principles:
 
-## Publicare
+- **Start simple.** A good idea should be easy to understand.
+- **Make it feel good.** Every interaction, screen, and response should have a purpose.
+- **Respect people's time.** Products should fit naturally into everyday life.
 
-Conținutul repository-ului poate fi publicat direct pe GitHub Pages, Netlify, Vercel sau Cloudflare Pages. Directorul de publicare este rădăcina proiectului, fără comandă de build.
+## Aura Farm
 
-## Înainte de lansare
+Aura Farm is our first mobile game.
 
-- Înlocuiește `hello@gobyde.com` dacă adresa oficială este diferită.
-- Adaugă linkurile reale Google Play și App Store după publicarea jocului.
-- Adaugă domeniul final în metadatele Open Graph dacă site-ul primește un domeniu propriu.
+It is a casual incremental experience built around short sessions, clear progression, character customization, collectible pets, upgrades, and offline progress. Players collect Aura, develop their character, unlock new areas, and choose how they want to grow.
 
-## Structură
+Aura Farm is currently in development for mobile devices.
 
-- `index.html` — conținut, SEO și structură semantică
-- `aura-farm.html` — pagina dedicată jocului Aura Farm
-- `styles.css` — design responsive și animații
-- `script.js` — traduceri RO/EN, meniu mobil și reveal animations
-- `assets/` — imagini optimizate din Aura Farm
+## Looking ahead
+
+Aura Farm is only the beginning. GoByde Tech is building a foundation for more original mobile games and useful apps, each with its own identity and a clear reason to exist.
+
+We prefer to share real progress instead of making early promises. New projects will be announced when they are ready.
+
+## Contact
+
+For general enquiries, partnerships, or project discussions, contact us at [hello@gobyde.com](mailto:hello@gobyde.com).
+
+## Company
+
+- **Legal name:** Gobyde Tech SRL
+- **Country:** Romania
+
+© 2026 Gobyde Tech SRL. All rights reserved.
