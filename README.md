@@ -30,7 +30,7 @@ We prefer to share real progress instead of making early promises. New projects 
 
 ## Contact
 
-For general enquiries, partnerships, or project discussions, contact us at [hello@gobyde.com](mailto:hello@gobyde.com).
+For general enquiries, partnerships, or project discussions, contact us at [support@gobyde.com](mailto:support@gobyde.com).
 
 ## Company
 
