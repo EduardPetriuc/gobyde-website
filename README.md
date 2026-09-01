@@ -14,17 +14,17 @@ Our approach is guided by three principles:
 - **Make it feel good.** Every interaction, screen, and response should have a purpose.
 - **Respect people's time.** Products should fit naturally into everyday life.
 
-## Aura Farm
+## Aura Clicker
 
-Aura Farm is our first mobile game.
+Aura Clicker is our first mobile game.
 
 It is a casual incremental experience built around short sessions, clear progression, character customization, collectible pets, upgrades, and offline progress. Players collect Aura, develop their character, unlock new areas, and choose how they want to grow.
 
-Aura Farm is currently in development for mobile devices.
+Aura Clicker is currently in development for mobile devices.
 
 ## Looking ahead
 
-Aura Farm is only the beginning. GoByde Tech is building a foundation for more original mobile games and useful apps, each with its own identity and a clear reason to exist.
+Aura Clicker is only the beginning. GoByde Tech is building a foundation for more original mobile games and useful apps, each with its own identity and a clear reason to exist.
 
 We prefer to share real progress instead of making early promises. New projects will be announced when they are ready.
 

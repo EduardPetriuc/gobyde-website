@@ -278,6 +278,8 @@ h1, h2, h3, p { margin-top: 0; }
 .legal-content ul { display: grid; gap: 12px; margin: 25px 0 0; padding-left: 20px; }
 .legal-content strong { color: #000000; }
 .legal-content a { color: #000000; border-bottom: 1px solid rgba(0,0,0,.28); }
+.legal-anchor { position: absolute; scroll-margin-top: 110px; }
+html[lang="ro"] .localized-copy[lang="en"], html[lang="en"] .localized-copy[lang="ro"] { display: none; }
 
 /* Homepage game catalog */
 .game-card-link { color: inherit; transition: transform 260ms ease, border-color 260ms ease, box-shadow 260ms ease; }
@@ -319,7 +321,7 @@ h1, h2, h3, p { margin-top: 0; }
 .coming-note-heading strong { max-width: 210px; font-family: var(--display); font-size: 25px; line-height: 1; letter-spacing: -.045em; text-transform: uppercase; }
 .coming-note p { margin: 0; color: #919090; font-size: 14px; line-height: 1.75; }
 
-/* Aura Farm detail page */
+/* Aura Clicker detail page */
 .nav-home-link { display: inline-flex; align-items: center; gap: 8px; color: #000000; font-size: 12px; font-weight: 700; }
 .nav-home-link span:last-child { color: var(--purple-light); }
 .game-detail-hero { position: relative; width: min(calc(100% - 48px), var(--max)); min-height: 820px; margin: 0 auto; padding: 150px 0 75px; display: grid; grid-template-columns: .82fr 1.18fr; align-items: center; gap: 70px; }
