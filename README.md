@@ -20,7 +20,7 @@ Aura Clicker is our first mobile game.
 
 It is a casual incremental experience built around short sessions, clear progression, character customization, collectible pets, upgrades, and offline progress. Players collect Aura, develop their character, unlock new areas, and choose how they want to grow.
 
-Aura Clicker is currently in development for mobile devices.
+Aura Clicker is available on [Google Play](https://play.google.com/store/apps/details?id=com.gobyde.aurafarmer) and the [App Store](https://apps.apple.com/ro/app/aura-clicker/id6819347587?l=ro).
 
 ## Looking ahead
 
