@@ -82,13 +82,13 @@
         <aside class="legal-summary reveal localized-copy" lang="ro" aria-label="Pe scurt">
           <span>01 — 11</span>
           <strong>PE SCURT</strong>
-          <p>Jocul este destinat utilizatorilor de minimum 13 ani și nu cere cont. Poate folosi reclame (Google AdMob), achiziții în aplicație, salvări în cloud prin Google Play Games sau Game Center și iCloud, statistici și rapoarte de erori opționale (oprite implicit) și notificări locale opționale.</p>
+          <p>Jocul este destinat utilizatorilor de minimum 13 ani și nu cere cont. Poate folosi reclame (Google AdMob), achiziții în aplicație, salvări în cloud prin Google Play Games sau Game Center și iCloud, anunțuri de actualizare prin Firebase Remote Config, statistici și rapoarte de erori opționale (oprite implicit) și notificări locale opționale.</p>
           <a href="mailto:support@gobyde.com">support@gobyde.com ↗</a>
         </aside>
         <aside class="legal-summary reveal localized-copy" lang="en" aria-label="At a glance">
           <span>01 — 11</span>
           <strong>AT A GLANCE</strong>
-          <p>The game is intended for users aged 13 and older and does not ask you to create an account. It may use ads (Google AdMob), in-app purchases, cloud saves through Google Play Games or Game Center and iCloud, optional statistics and crash reports (off by default), and optional local notifications.</p>
+          <p>The game is intended for users aged 13 and older and does not ask you to create an account. It may use ads (Google AdMob), in-app purchases, cloud saves through Google Play Games or Game Center and iCloud, update notices through Firebase Remote Config, optional statistics and crash reports (off by default), and optional local notifications.</p>
           <a href="mailto:support@gobyde.com">support@gobyde.com ↗</a>
         </aside>
 
@@ -99,7 +99,7 @@
             <span class="legal-index">01</span>
             <div>
               <h2>Rezumat</h2>
-              <p>Turning Tails poate afișa reclame, oferi achiziții în aplicație, salva progresul local și, dacă ești conectat pe dispozitiv, în Google Play Games Saved Games sau în iCloud prin Game Center, trimite statistici anonime și rapoarte de erori prin Firebase numai cu acordul tău și programa notificări locale opționale.</p>
+              <p>Turning Tails poate afișa reclame, oferi achiziții în aplicație, salva progresul local și, dacă ești conectat pe dispozitiv, în Google Play Games Saved Games sau în iCloud prin Game Center, afla prin Firebase Remote Config dacă există o versiune nouă a jocului, trimite statistici anonime și rapoarte de erori prin Firebase numai cu acordul tău și programa notificări locale opționale.</p>
               <p>Nu îți cerem numele, adresa de e-mail, numărul de telefon, locația precisă, contactele, fotografiile sau datele cardului, iar jocul nu are conturi proprii și nici un server propriu care să primească progresul tău. Totuși, aplicația și serviciile Google și Apple integrate prelucrează informațiile descrise mai jos.</p>
             </div>
           </section>
@@ -118,6 +118,7 @@
               </ul>
               <p><strong>Achiziții în aplicație.</strong> Plățile („Elimină reclamele”, „Vieți nelimitate”, pachetul de început și pachetele de ghinde) sunt procesate de Google Play Billing pe Android și de Apple App Store pe iOS. Nu primim datele cardului sau ale contului bancar. Aplicația primește informațiile necesare finalizării și restaurării unei achiziții: produsul, starea și datele de verificare ale tranzacției.</p>
               <p><strong>Notificări.</strong> Dacă pornești <em>Memento pentru vieți</em>, jocul cere permisiunea sistemului și apoi programează o singură notificare locală, pentru momentul în care revine următoarea viață. Ea este creată pe dispozitivul tău; nu operăm un server de notificări push și nu trimitem date nicăieri. O poți opri din Setări sau din setările sistemului.</p>
+              <p><strong>Anunțuri de actualizare (Firebase Remote Config).</strong> Jocul descarcă periodic de la Firebase Remote Config, un serviciu Google, un mic mesaj de configurare care ne permite să te anunțăm că a apărut o versiune nouă (sau, rar, că o versiune veche trebuie actualizată). Pentru aceasta, Firebase Installations creează un identificator aleator al instalării, iar Google primește adresa IP și informații tehnice de bază, precum platforma și versiunea aplicației. Acest serviciu funcționează indiferent de opțiunea de statistici, nu primește date de progres din joc și nu este folosit pentru publicitate.</p>
               <p><strong>Statistici și rapoarte de erori (opțional, Firebase Analytics și Crashlytics).</strong> Sunt <strong>dezactivate implicit</strong>. Jocul întreabă o singură dată, după primele niveluri, iar răspunsul îl poți schimba oricând în <em>Setări &gt; Trimite statistici anonime</em>. Până nu accepți, nu se colectează și nu se trimite nimic. Dacă accepți, primim evenimente de joc cu parametri limitați: ce nivel ai început, câștigat sau pierdut (și din ce cauză), câte acțiuni a durat și câte stele ai obținut, când pierzi o viață, dacă ai folosit un indiciu sau un skip, ce ai cheltuit în ghinde, ce reclamă recompensată ai vizionat, ce achiziție ai făcut (niciodată datele de plată), cadoul zilnic și dacă ai pornit memento-urile; iar prin rapoartele de erori, modelul dispozitivului, versiunea sistemului și a aplicației și urma tehnică a erorii. Firebase adaugă automat metadate precum sesiuni, țara aproximativă și un identificator aleator al instalării (Firebase Installations). Nu trimitem nume, e-mail sau text liber și nu atribuim identificatori de utilizator. Nu folosim aceste date pentru publicitate: consimțământul Firebase pentru stocare publicitară, date de utilizator pentru reclame și personalizare este refuzat, iar identificatorul de publicitate nu este colectat de Firebase Analytics. Dacă îți retragi acordul, colectarea se oprește, iar datele de analiză păstrate pe dispozitiv sunt resetate.</p>
             </div>
           </section>
@@ -132,6 +133,7 @@
                 <li>pentru procesarea, verificarea și restaurarea achizițiilor;</li>
                 <li>pentru afișarea și măsurarea reclamelor și acordarea recompenselor;</li>
                 <li>pentru înțelegerea dificultății nivelurilor, echilibrarea lor și repararea erorilor, numai dacă ai acceptat statisticile și rapoartele de erori;</li>
+                <li>pentru a te anunța când apare o versiune nouă a jocului;</li>
                 <li>pentru memorarea setărilor și programarea notificărilor solicitate;</li>
                 <li>pentru securitate, prevenirea fraudei și diagnosticarea problemelor tehnice.</li>
               </ul>
@@ -143,7 +145,7 @@
             <span class="legal-index">04</span>
             <div>
               <h2>Când sunt partajate informațiile</h2>
-              <p>Nu vindem date personale pentru bani. Datele pot fi prelucrate de Google Mobile Ads pentru publicitate, măsurare, analiză și prevenirea fraudei; Google Play Games Services și Apple Game Center / iCloud pentru autentificare și salvări; Firebase Analytics și Crashlytics, numai cu acordul tău, pentru statistici și rapoarte de erori; Google Play Billing și Apple App Store pentru plăți și restaurarea achizițiilor; autorități sau consultanți profesioniști când legea o cere; ori un succesor al aplicației sau al companiei, conform legii și acestei politici.</p>
+              <p>Nu vindem date personale pentru bani. Datele pot fi prelucrate de Google Mobile Ads pentru publicitate, măsurare, analiză și prevenirea fraudei; Google Play Games Services și Apple Game Center / iCloud pentru autentificare și salvări; Firebase Remote Config pentru anunțurile de actualizare; Firebase Analytics și Crashlytics, numai cu acordul tău, pentru statistici și rapoarte de erori; Google Play Billing și Apple App Store pentru plăți și restaurarea achizițiilor; autorități sau consultanți profesioniști când legea o cere; ori un succesor al aplicației sau al companiei, conform legii și acestei politici.</p>
               <p>Google poate acționa ca operator independent sau ca furnizor de servicii, în funcție de serviciu și context. Politicile Google și Apple guvernează prelucrarea realizată de acestea. Nu folosim datele Play Games, Game Center sau Firebase pentru publicitate.</p>
             </div>
           </section>
@@ -156,6 +158,7 @@
                 <li>progresul și preferințele locale rămân pe dispozitiv până când ștergi datele aplicației sau o dezinstalezi, sub rezerva mecanismelor de backup Android și iOS;</li>
                 <li>salvările Play Games rămân asociate profilului până când sunt suprascrise sau șterse ori conform regulilor Google;</li>
                 <li>salvările iCloud rămân asociate contului Apple până când sunt suprascrise sau șterse ori conform regulilor Apple;</li>
+                <li>datele tehnice Firebase Remote Config (identificatorul instalării) sunt păstrate de Google conform politicilor sale;</li>
                 <li>datele Firebase Analytics și Crashlytics, dacă ai acceptat statisticile, sunt păstrate de Google, iar pentru datele Firebase Analytics am setat retenția datelor de utilizator și de eveniment la 2 luni;</li>
                 <li>datele despre reclame și diagnostic sunt păstrate de Google conform setărilor, politicilor și obligațiilor sale legale.</li>
               </ul>
@@ -169,6 +172,7 @@
               <h2>Opțiunile tale și ștergerea</h2>
               <ul>
                 <li>poți porni sau opri oricând statisticile anonime și memento-urile din <strong>Setări</strong> și poți administra permisiunea pentru notificări din setările sistemului;</li>
+                <li>anunțurile de actualizare nu au un comutator în joc; ele folosesc doar identificatorul aleator al instalării și datele tehnice de bază descrise mai sus, iar jocul se poate folosi și fără internet;</li>
                 <li>poți schimba consimțământul pentru reclame din <strong>Setări &gt; Opțiuni confidențialitate</strong> (în regiunile unde se aplică);</li>
                 <li>poți reseta sau șterge advertising ID (Android) ori restricționa urmărirea reclamelor din setările iOS și administra preferințele de publicitate Google;</li>
                 <li>poți administra autentificarea și confidențialitatea profilului din setările Google Play Games (Android) sau Game Center și iCloud (iOS);</li>
@@ -236,7 +240,7 @@
             <span class="legal-index">01</span>
             <div>
               <h2>Summary</h2>
-              <p>Turning Tails may display ads, offer in-app purchases, save progress locally and, if you are signed in on your device, in Google Play Games Saved Games or in iCloud through Game Center, send anonymous statistics and crash reports through Firebase only with your consent, and schedule optional local notifications.</p>
+              <p>Turning Tails may display ads, offer in-app purchases, save progress locally and, if you are signed in on your device, in Google Play Games Saved Games or in iCloud through Game Center, check through Firebase Remote Config whether a new version of the game is available, send anonymous statistics and crash reports through Firebase only with your consent, and schedule optional local notifications.</p>
               <p>We do not ask for your name, email address, phone number, precise location, contacts, photos, or payment-card details, and the game has no accounts of its own and no server of ours that receives your progress. However, the app and its integrated Google and Apple services process the information described below.</p>
             </div>
           </section>
@@ -255,6 +259,7 @@
               </ul>
               <p><strong>In-app purchases.</strong> Payments ("Remove ads", "Unlimited hearts", the starter pack, and acorn packs) are processed by Google Play Billing on Android and the Apple App Store on iOS. We do not receive card or bank-account details. The app receives information needed to complete and restore a purchase: the product, its status, and transaction verification data.</p>
               <p><strong>Notifications.</strong> If you turn on <em>Heart reminders</em>, the game asks your system for permission and then schedules a single local notification for when your next heart is back. It is created on your device; we do not operate a push-notification server and send no data anywhere. You can turn it off in Settings or in your system settings.</p>
+              <p><strong>Update notices (Firebase Remote Config).</strong> The game periodically downloads from Firebase Remote Config, a Google service, a small configuration message that lets us tell you a new version is available (or, rarely, that an old version must be updated). To do this, Firebase Installations creates a random installation identifier, and Google receives the IP address and basic technical information such as platform and app version. This service works regardless of the statistics option, does not receive in-game progress data, and is not used for advertising.</p>
               <p><strong>Statistics and crash reports (optional, Firebase Analytics and Crashlytics).</strong> These are <strong>off by default</strong>. The game asks once, after the first few levels, and you can change your answer at any time in <em>Settings &gt; Share anonymous statistics</em>. Until you agree, nothing is collected or sent. If you agree, we receive gameplay events with limited parameters: which level you started, won or failed (and why), how many actions it took and how many stars you earned, when you lose a heart, whether you used a hint or a skip, what you spent in acorns, which rewarded ad you watched, which purchase you made (never your payment details), the daily gift, and whether you turned reminders on; and, through crash reports, the device model, system and app version, and the technical trace of the crash. Firebase automatically adds metadata such as sessions, approximate country, and a random installation identifier (Firebase Installations). We do not send names, email addresses, or free text, and we do not assign user identifiers. We do not use this data for advertising: Firebase consent for ad storage, ad user data, and ad personalization is denied, and Firebase Analytics does not collect the advertising identifier. If you withdraw consent, collection stops and the analytics data kept on the device is reset.</p>
             </div>
           </section>
@@ -269,6 +274,7 @@
                 <li>to process, verify, and restore purchases;</li>
                 <li>to display and measure ads and provide ad-based rewards;</li>
                 <li>to understand level difficulty, balance levels, and fix errors, only if you have accepted statistics and crash reports;</li>
+                <li>to tell you when a new version of the game is available;</li>
                 <li>to remember settings and schedule requested notifications;</li>
                 <li>to maintain security, prevent fraud, and diagnose technical issues.</li>
               </ul>
@@ -280,7 +286,7 @@
             <span class="legal-index">04</span>
             <div>
               <h2>When information is shared</h2>
-              <p>We do not sell personal information for money. Information may be processed by Google Mobile Ads for advertising, measurement, analytics, and fraud prevention; Google Play Games Services and Apple Game Center / iCloud for sign-in and saved games; Firebase Analytics and Crashlytics, only with your consent, for statistics and crash reports; Google Play Billing and the Apple App Store for payments and purchase restoration; authorities or professional advisers when required by law; or a successor to the app or business, subject to law and this policy.</p>
+              <p>We do not sell personal information for money. Information may be processed by Google Mobile Ads for advertising, measurement, analytics, and fraud prevention; Google Play Games Services and Apple Game Center / iCloud for sign-in and saved games; Firebase Remote Config for update notices; Firebase Analytics and Crashlytics, only with your consent, for statistics and crash reports; Google Play Billing and the Apple App Store for payments and purchase restoration; authorities or professional advisers when required by law; or a successor to the app or business, subject to law and this policy.</p>
               <p>Google may act as an independent controller or a service provider depending on the service and context. Google's and Apple's policies govern their own processing. We do not use Play Games, Game Center, or Firebase data for advertising.</p>
             </div>
           </section>
@@ -293,6 +299,7 @@
                 <li>local progress and preferences remain on the device until app data is cleared or the app is uninstalled, subject to Android and iOS backup behavior;</li>
                 <li>Play Games saves remain associated with the profile until overwritten or deleted, or as otherwise provided by Google's rules;</li>
                 <li>iCloud saves remain associated with the Apple account until overwritten or deleted, or as otherwise provided by Apple's rules;</li>
+                <li>Firebase Remote Config technical data (the installation identifier) is retained by Google according to its policies;</li>
                 <li>Firebase Analytics and Crashlytics data, if you accepted statistics, is retained by Google, and for Firebase Analytics data we have set both user-data and event-data retention to 2 months;</li>
                 <li>advertising and diagnostic data is retained by Google according to its settings, policies, and legal obligations.</li>
               </ul>
@@ -306,6 +313,7 @@
               <h2>Your choices and deletion</h2>
               <ul>
                 <li>turn anonymous statistics and reminders on or off at any time in <strong>Settings</strong>, and manage notification permission in your system settings;</li>
+                <li>update notices have no switch in the game; they use only the random installation identifier and the basic technical data described above, and the game can be played offline;</li>
                 <li>change your ad consent in <strong>Settings &gt; Privacy options</strong> (in regions where it applies);</li>
                 <li>reset or delete your advertising ID (Android) or limit ad tracking in iOS settings, and manage Google ad choices;</li>
                 <li>manage sign-in and profile privacy in Google Play Games settings (Android) or Game Center and iCloud settings (iOS);</li>
