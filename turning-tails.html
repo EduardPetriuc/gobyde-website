@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Turning Tails: Seasons Puzzle este un joc puzzle pentru mobil în care ghidezi o vulpiță acasă, în timp ce anotimpurile schimbă harta."
+      data-i18n-content="ttMetaDescription"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:title" content="Turning Tails: Seasons Puzzle — Joc GoByde" data-i18n-content="ttOgTitle" />
+    <meta
+      property="og:description"
+      content="Așteaptă iarna, treci gheața și du vulpița acasă. 180 de puzzle-uri în 6 lumi."
+      data-i18n-content="ttOgDescription"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/tt-feature.png" />
+    <title>Turning Tails — GoByde</title>
+    <link rel="icon" href="assets/gobyde-logo.png?v=20260811-3" type="image/png" />
+    <link rel="stylesheet" href="styles.css?v=20261104-1" />
+    <script src="script.js?v=20261104-1" defer></script>
+  </head>
+  <body class="game-page" data-page="turning-tails">
+    <a class="skip-link" href="#main" data-i18n="skip">Sari la conținut</a>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="site-header" data-header>
+      <div class="nav-shell">
+        <a class="brand" href="index.html" aria-label="GoByde">
+          <span class="brand-logo" aria-hidden="true">
+            <img src="assets/gobyde-logo.png?v=20260811-3" alt="" />
+          </span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Navigație principală" data-i18n-aria="navLabel">
+          <a href="index.html#games" data-i18n="allGames">Toate jocurile</a>
+          <a href="#screens" data-i18n="navGallery">Galerie</a>
+          <a href="#gameplay" data-i18n="navGameplay">Cum se joacă</a>
+          <a href="#worlds" data-i18n="ttNavWorlds">Lumile</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="nav-home-link" href="index.html">
+            <span data-i18n="backHome">Acasă</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <button class="language-toggle" type="button" data-language aria-label="Switch to English">
+            <span class="language-active">RO</span>
+            <span class="language-divider">/</span>
+            <span>EN</span>
+          </button>
+          <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu">
+            <span class="sr-only" data-i18n="menu">Meniu</span>
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-menu" id="mobile-menu" data-mobile-menu aria-label="Navigație mobilă" data-i18n-aria="mobileNavLabel">
+        <a href="index.html#games" data-i18n="allGames">Toate jocurile</a>
+        <a href="#screens" data-i18n="navGallery">Galerie</a>
+        <a href="#gameplay" data-i18n="navGameplay">Cum se joacă</a>
+        <a href="#worlds" data-i18n="ttNavWorlds">Lumile</a>
+        <a href="index.html" data-i18n="backHome">Acasă</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="game-detail-hero" id="top">
+        <div class="detail-hero-glow" aria-hidden="true"></div>
+        <div class="detail-hero-copy reveal">
+          <a class="breadcrumb" href="index.html#games">
+            <span aria-hidden="true">←</span>
+            <span data-i18n="allGames">Toate jocurile</span>
+          </a>
+          <p class="eyebrow">
+            <span class="status-dot"></span>
+            <span data-i18n="ttEyebrow">UN PUZZLE GOBYDE</span>
+          </p>
+          <div class="detail-logo"><img class="tt-logo-icon" src="assets/tt-icon.png" alt="" width="47" height="47" /><p>Turning Tails</p></div>
+          <h1 data-i18n="ttTagline">Așteaptă iarna. Du vulpița acasă.</h1>
+          <p class="detail-lead" data-i18n="ttHeroDescription">
+            Primăvara înfloresc copacii, vara strălucește soarele, toamna cad frunzele, iarna îngheață apa. Cronometrează fiecare pas și ghidează vulpița până la vizuină.
+          </p>
+          <div class="game-tags">
+            <span data-i18n="ttTagPuzzle">Puzzle</span><span data-i18n="ttTagCozy">Relaxant</span><span data-i18n="ttTagNoTimer">Fără cronometru</span>
+          </div>
+          <p class="soon-note" data-i18n="ttSoonNote">Turning Tails vine în curând pe Google Play și în App Store.</p>
+        </div>
+
+        <div class="detail-hero-art tt-hero-art reveal" data-delay="120">
+          <div class="release-badge"><span></span><span data-i18n="ttComingSoon">ÎN CURÂND</span></div>
+          <div class="screenshot-phone tt-hero-phone">
+            <img src="assets/tt-screen-hook.png" alt="Nivel Turning Tails în anotimpul toamnă" data-i18n-alt="ttScreenHookAlt" />
+          </div>
+          <p class="detail-art-label" data-i18n="ttDetailArtLabel">ANOTIMPURILE SCHIMBĂ HARTA.</p>
+        </div>
+      </section>
+
+      <section class="game-overview section" id="features">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-number">01 — <span data-i18n="ttTheExperience">EXPERIENȚA</span></p>
+            <h2 data-i18n="ttBuiltTitle">Anotimpurile schimbă harta. Tu alegi momentul.</h2>
+          </div>
+          <p data-i18n="ttBuiltText">
+            Lacul e apă acum, dar așteaptă până vine iarna și îngheață. Liane te duc peste râu primăvara, apoi se usucă toamna. Fii pe teren sigur exact când se schimbă anotimpul.
+          </p>
+        </div>
+
+        <dl class="detail-stats reveal">
+          <div><dt>180</dt><dd data-i18n="ttStatLevels">NIVELURI</dd></div>
+          <div><dt>6</dt><dd data-i18n="ttStatWorlds">LUMI</dd></div>
+          <div><dt>4</dt><dd data-i18n="ttStatSeasons">ANOTIMPURI</dd></div>
+          <div><dt>6</dt><dd data-i18n="ttStatLanguages">LIMBI</dd></div>
+        </dl>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span class="feature-icon">◔</span><p class="feature-index">01</p>
+            <h3 data-i18n="ttFeatTimeTitle">Cronometrează fiecare pas</h3>
+            <p data-i18n="ttFeatTimeText">Terenul se schimbă la fiecare câteva acțiuni. Gândește-te unde vei fi când se întâmplă.</p>
+          </article>
+          <article class="feature-card reveal" data-delay="80">
+            <span class="feature-icon">↔</span><p class="feature-index">02</p>
+            <h3 data-i18n="ttFeatEasyTitle">Ușor de învățat</h3>
+            <p data-i18n="ttFeatEasyText">Trage cu degetul ca să te miști și atinge AȘTEAPTĂ ca să lași timpul să treacă.</p>
+          </article>
+          <article class="feature-card reveal" data-delay="160">
+            <span class="feature-icon">☾</span><p class="feature-index">03</p>
+            <h3 data-i18n="ttFeatCalmTitle">Fără presiune</h3>
+            <p data-i18n="ttFeatCalmText">Fără cronometre și cu undo nelimitat, gratuit. Nivelurile durează 30–90 de secunde.</p>
+          </article>
+          <article class="feature-card reveal" data-delay="240">
+            <span class="feature-icon">✦</span><p class="feature-index">04</p>
+            <h3 data-i18n="ttFeatFoxTitle">Vulpea ta</h3>
+            <p data-i18n="ttFeatFoxText">Strânge ghinde și schimbă pălăria și culoarea blănii vulpiței.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="screenshots-section section" id="screens">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-number">02 — <span data-i18n="screensLabel">DIRECT DIN JOC</span></p>
+            <h2 data-i18n="screensTitle">Uite cum arată jocul.</h2>
+          </div>
+          <p data-i18n="ttScreensIntro">
+            Turning Tails e făcut pentru telefon: o tablă mică, o roată a anotimpurilor și un singur gest ca să te miști.
+          </p>
+        </div>
+
+        <div class="mobile-screenshot-gallery" aria-label="Capturi mobile Turning Tails" data-i18n-aria="ttScreensAria">
+          <figure class="screenshot-card reveal">
+            <div class="screenshot-phone">
+              <img src="assets/tt-screen-hook.png" alt="Nivel Turning Tails în anotimpul toamnă" data-i18n-alt="ttScreenHookAlt" loading="lazy" />
+            </div>
+            <figcaption>
+              <span>01</span>
+              <div><h3 data-i18n="ttScreenHookTitle">Du vulpița acasă</h3><p data-i18n="ttScreenHookText">Ajungi la vizuină înainte ca anotimpul să schimbe terenul de sub tine.</p></div>
+            </figcaption>
+          </figure>
+          <figure class="screenshot-card screenshot-card-offset reveal" data-delay="70">
+            <div class="screenshot-phone">
+              <img src="assets/tt-screen-winter.png" alt="Vulpea pe un lac înghețat" data-i18n-alt="ttScreenWinterAlt" loading="lazy" />
+            </div>
+            <figcaption>
+              <span>02</span>
+              <div><h3 data-i18n="ttScreenWinterTitle">Așteaptă iarna</h3><p data-i18n="ttScreenWinterText">Lacul îngheață, iar gheața te ține. Dar numai cât timp e iarnă.</p></div>
+            </figcaption>
+          </figure>
+          <figure class="screenshot-card reveal" data-delay="140">
+            <div class="screenshot-phone">
+              <img src="assets/tt-screen-peek.png" alt="Roata anotimpurilor cu previzualizare" data-i18n-alt="ttScreenPeekAlt" loading="lazy" />
+            </div>
+            <figcaption>
+              <span>03</span>
+              <div><h3 data-i18n="ttScreenPeekTitle">Vezi anotimpul următor</h3><p data-i18n="ttScreenPeekText">Ține apăsat pe roată și vezi cum va arăta terenul la următoarea schimbare.</p></div>
+            </figcaption>
+          </figure>
+          <figure class="screenshot-card screenshot-card-offset reveal" data-delay="210">
+            <div class="screenshot-phone">
+              <img src="assets/tt-screen-map.png" alt="Harta nivelurilor Turning Tails" data-i18n-alt="ttScreenMapAlt" loading="lazy" />
+            </div>
+            <figcaption>
+              <span>04</span>
+              <div><h3 data-i18n="ttScreenMapTitle">180 de niveluri</h3><p data-i18n="ttScreenMapText">Șase lumi, de la lacul înghețat până la vârf, cu cel puțin 3 stele de câștigat la fiecare.</p></div>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="gameplay-deep-dive section" id="gameplay">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-number">03 — <span data-i18n="ttGameplayLabel">CUM JOCI</span></p>
+            <h2 data-i18n="ttGameplayTitle">Mută, așteaptă, ajunge acasă.</h2>
+          </div>
+          <p data-i18n="ttGameplayIntro">
+            Reguli simple, combinații care te fac să te gândești. Fiecare acțiune apropie schimbarea anotimpului.
+          </p>
+        </div>
+
+        <ol class="gameplay-loop">
+          <li class="gameplay-step reveal">
+            <span class="step-number">01</span>
+            <span class="step-icon" aria-hidden="true">↗</span>
+            <h3 data-i18n="ttStep1Title">Mută vulpea</h3>
+            <p data-i18n="ttStep1Text">Trage cu degetul într-o direcție sau atinge o celulă alăturată.</p>
+          </li>
+          <li class="gameplay-step reveal" data-delay="70">
+            <span class="step-number">02</span>
+            <span class="step-icon" aria-hidden="true">❄</span>
+            <h3 data-i18n="ttStep2Title">Anotimpul se schimbă</h3>
+            <p data-i18n="ttStep2Text">La fiecare câteva acțiuni vine următorul anotimp, iar terenul sezonier se transformă.</p>
+          </li>
+          <li class="gameplay-step reveal" data-delay="140">
+            <span class="step-number">03</span>
+            <span class="step-icon" aria-hidden="true">⧖</span>
+            <h3 data-i18n="ttStep3Title">Așteaptă când trebuie</h3>
+            <p data-i18n="ttStep3Text">Uneori cea mai bună mutare este AȘTEAPTĂ: lași timpul să treacă și drumul se deschide.</p>
+          </li>
+          <li class="gameplay-step reveal" data-delay="210">
+            <span class="step-number">04</span>
+            <span class="step-icon" aria-hidden="true">⌂</span>
+            <h3 data-i18n="ttStep4Title">Ajungi la vizuină</h3>
+            <p data-i18n="ttStep4Text">Strânge ghindele și termină în cât mai puține acțiuni pentru trei stele.</p>
+          </li>
+        </ol>
+
+        <div class="systems-panel reveal">
+          <div class="systems-intro">
+            <p class="section-number" data-i18n="ttSystemsLabel">CE GĂSEȘTI ÎN JOC</p>
+            <h3 data-i18n="ttSystemsTitle">Un puzzle liniștit, cu de toate.</h3>
+            <p data-i18n="ttSystemsIntro">Mici ajutoare și recompense care te țin în joc fără grabă.</p>
+          </div>
+          <div class="systems-list">
+            <article>
+              <span aria-hidden="true">◎</span>
+              <div><h4 data-i18n="ttSysPeekTitle">Privire în viitor</h4><p data-i18n="ttSysPeekText">Roata anotimpurilor îți arată ce urmează, oricând vrei.</p></div>
+            </article>
+            <article>
+              <span aria-hidden="true">↶</span>
+              <div><h4 data-i18n="ttSysUndoTitle">Undo nelimitat</h4><p data-i18n="ttSysUndoText">Te-ai înșelat? Dai înapoi gratuit, de câte ori ai nevoie.</p></div>
+            </article>
+            <article>
+              <span aria-hidden="true">★</span>
+              <div><h4 data-i18n="ttSysAcornsTitle">Ghinde și stele</h4><p data-i18n="ttSysAcornsText">Strânge ghinde, câștigă stele și cheltuiește-le pe indicii, pălării și blană.</p></div>
+            </article>
+            <article>
+              <span aria-hidden="true">♥</span>
+              <div><h4 data-i18n="ttSysHeartsTitle">Vieți și cadou zilnic</h4><p data-i18n="ttSysHeartsText">Viețile revin la fiecare 30 de minute, iar în meniu te așteaptă un cadou în fiecare zi.</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="world-section section" id="worlds">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-number">04 — <span data-i18n="ttWorldsLabel">LUMILE</span></p>
+            <h2 data-i18n="ttWorldsTitle">Șase lumi, fiecare cu o idee nouă.</h2>
+          </div>
+          <p data-i18n="ttWorldsIntro">Pe măsură ce avansezi, apar tipuri noi de teren care se poartă diferit în fiecare anotimp.</p>
+        </div>
+
+        <div class="feature-grid tt-worlds">
+          <article class="feature-card reveal">
+            <p class="feature-index">01</p>
+            <h3 data-i18n="ttWorld1">Lacul înghețat</h3>
+            <p data-i18n="ttWorld1Text">Apa devine gheață iarna. Învață să aștepți.</p>
+          </article>
+          <article class="feature-card reveal" data-delay="80">
+            <p class="feature-index">02</p>
+            <h3 data-i18n="ttWorld2">Pădurea cu râu</h3>
+            <p data-i18n="ttWorld2Text">Lianele te duc peste râu primăvara și se usucă toamna.</p>
+          </article>
+          <article class="feature-card reveal" data-delay="160">
+            <p class="feature-index">03</p>
+            <h3 data-i18n="ttWorld3">Mlaștina</h3>
+            <p data-i18n="ttWorld3Text">Gropi ascunse sub frunze, noroi și zăpadă care se așterne.</p>
+          </article>
+          <article class="feature-card reveal">
+            <p class="feature-index">04</p>
+            <h3 data-i18n="ttWorld4">Livada</h3>
+            <p data-i18n="ttWorld4Text">Florile sunt în siguranță, până se trezesc albinele vara.</p>
+          </article>
+          <article class="feature-card reveal" data-delay="80">
+            <p class="feature-index">05</p>
+            <h3 data-i18n="ttWorld5">Dealul totemurilor</h3>
+            <p data-i18n="ttWorld5Text">Totemurile întorc anotimpurile pe dos.</p>
+          </article>
+          <article class="feature-card reveal" data-delay="160">
+            <p class="feature-index">06</p>
+            <h3 data-i18n="ttWorld6">Vârful</h3>
+            <p data-i18n="ttWorld6Text">Zone înghețate tot anul, unde iarna nu se termină.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="detail-cta section">
+        <div class="contact-card reveal">
+          <div class="contact-glow" aria-hidden="true"></div>
+          <p class="section-number">05 — <span data-i18n="ttComingSoon">ÎN CURÂND</span></p>
+          <h2 data-i18n="ttCtaTitle">Turning Tails<br />vine în curând.</h2>
+          <p data-i18n="ttCtaText">Vom anunța aici și pe rețelele noastre când jocul apare pe Google Play și în App Store. Jocul conține reclame și achiziții opționale; poate fi terminat gratuit.</p>
+          <p><a class="email-link" href="turning-tails-privacy-policy.html"><span data-i18n="ttCtaPrivacy">Politica de confidențialitate Turning Tails</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5m-9 0h9v9" /></svg></a></p>
+        </div>
+      </section>
+    </main>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="index.html" aria-label="GoByde">
+        <span class="brand-logo" aria-hidden="true">
+          <img src="assets/gobyde-logo.png?v=20260811-3" alt="" loading="lazy" />
+        </span>
+      </a>
+      <p>© <span data-year></span> Gobyde Tech SRL. <span data-i18n="rights">Toate drepturile rezervate.</span></p>
+      <div class="footer-links">
+        <div class="social-links footer-social">
+          <a class="social-link" href="https://www.instagram.com/gobyde_tech/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" /></svg><span>Instagram</span></a>
+          <a class="social-link" href="https://www.tiktok.com/@gobydetech" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v12.5a4.5 4.5 0 1 1-4-4.47M14 3c.5 3.5 2.5 5.5 6 6V5.5C18 5.2 17 4 16.5 3Z" /></svg><span>TikTok</span></a>
+        </div>
+        <a href="privacy-policy.html" data-i18n="privacyLink">Confidențialitate</a>
+        <a href="#top" class="back-top"><span data-i18n="backTop">Înapoi sus</span> ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
