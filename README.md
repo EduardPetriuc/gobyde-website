@@ -38,3 +38,12 @@ For general enquiries, partnerships, or project discussions, contact us at [supp
 - **Country:** Romania
 
 © 2026 Gobyde Tech SRL. All rights reserved.
+
+## Development notes
+
+The site is static and served by Cloudflare (`wrangler.jsonc`). URLs are extensionless (`/aura-clicker`, not `/aura-clicker.html`).
+
+- **Bilingual pages.** The Romanian pages (`index.html`, `aura-clicker.html`, `turning-tails.html`) are the source of truth. The English versions in `en/` are generated from them with the dictionary in `script.js`. After editing those pages or `translations.en`, run `python3 tools/build_en.py` (needs `python3` and `node`). `python3 tools/build_en.py --check` tells you if `en/` is out of date.
+- **Privacy policy pages** are not part of that generator and are translated in the browser by `script.js`.
+- `sitemap.xml` lists all public URLs with `hreflang` alternates. Update it when a page is added.
+- `_redirects` holds permanent redirects (for example `/aura-farm` to `/aura-clicker`).

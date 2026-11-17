@@ -183,7 +183,7 @@ const translations = {
     privacyRightsTitle: "Drepturile tale",
     privacyRightsText: "În condițiile prevăzute de GDPR, poți solicita accesul la date, rectificarea sau ștergerea lor, restricționarea prelucrării, portabilitatea și te poți opune anumitor prelucrări. Ne poți contacta la <a href=\"mailto:support@gobyde.com\">support@gobyde.com</a>. De asemenea, poți depune o plângere la autoritatea competentă pentru protecția datelor, inclusiv ANSPDCP în România.",
     privacyGameTitle: "Politicile jocurilor",
-    privacyGameText: "Această politică se aplică numai site-ului GoByde. Pentru informații despre datele prelucrate de joc, consultă <a href=\"aura-clicker-privacy-policy.html\">Politica de confidențialitate Aura Clicker</a> sau <a href=\"turning-tails-privacy-policy.html\">Politica de confidențialitate Turning Tails</a>.",
+    privacyGameText: "Această politică se aplică numai site-ului GoByde. Pentru informații despre datele prelucrate de joc, consultă <a href=\"/aura-clicker-privacy-policy\">Politica de confidențialitate Aura Clicker</a> sau <a href=\"/turning-tails-privacy-policy\">Politica de confidențialitate Turning Tails</a>.",
     websitePrivacyLink: "Confidențialitatea site-ului",
     privacyLink: "Confidențialitate",
     rights: "Toate drepturile rezervate.",
@@ -273,6 +273,12 @@ const translations = {
     ttCatalogAria: "Descoperă Turning Tails",
     ttCatalogAlt: "Ecranul principal Turning Tails",
     ttCatalogBadge: "DISPONIBIL ACUM",
+    altAuraCharacter: "Personajul din Aura Clicker",
+    altAuraCity: "Orașul din Aura Clicker",
+    altAuraSchool: "Holul școlii din Aura Clicker",
+    altAuraDragon: "Dragonul Aura, companion colecționabil",
+    altAuraCat: "Pisica Aura, companion colecționabil",
+    altAuraChest: "Cufărul Aura",
   },
   en: {
     skip: "Skip to content",
@@ -458,7 +464,7 @@ const translations = {
     privacyRightsTitle: "Your rights",
     privacyRightsText: "Subject to the conditions set out in the GDPR, you may request access to, correction or deletion of your data, restriction of processing, data portability, and object to certain processing. Contact us at <a href=\"mailto:support@gobyde.com\">support@gobyde.com</a>. You may also lodge a complaint with the competent data protection authority, including the Romanian ANSPDCP.",
     privacyGameTitle: "Game policies",
-    privacyGameText: "This policy applies only to the GoByde website. For information about data processed by the game, read the <a href=\"aura-clicker-privacy-policy.html\">Aura Clicker Privacy Policy</a> or the <a href=\"turning-tails-privacy-policy.html\">Turning Tails Privacy Policy</a>.",
+    privacyGameText: "This policy applies only to the GoByde website. For information about data processed by the game, read the <a href=\"/aura-clicker-privacy-policy\">Aura Clicker Privacy Policy</a> or the <a href=\"/turning-tails-privacy-policy\">Turning Tails Privacy Policy</a>.",
     websitePrivacyLink: "Website privacy",
     privacyLink: "Privacy",
     rights: "All rights reserved.",
@@ -548,6 +554,12 @@ const translations = {
     ttCatalogAria: "Discover Turning Tails",
     ttCatalogAlt: "Turning Tails main screen",
     ttCatalogBadge: "AVAILABLE NOW",
+    altAuraCharacter: "The character from Aura Clicker",
+    altAuraCity: "The city in Aura Clicker",
+    altAuraSchool: "The school hallway in Aura Clicker",
+    altAuraDragon: "Aura Dragon, a collectible pet",
+    altAuraCat: "Aura Cat, a collectible pet",
+    altAuraChest: "The Aura Chest",
   },
 };
 
@@ -556,6 +568,17 @@ const menuButton = document.querySelector("[data-menu-toggle]");
 const mobileMenu = document.querySelector("[data-mobile-menu]");
 const languageButton = document.querySelector("[data-language]");
 let currentLanguage = localStorage.getItem("gobyde-language") || "ro";
+
+// Pages with a pre-translated counterpart (home, game pages) declare it in
+// data-alt-url. They are served in both languages as separate URLs (/ and /en/),
+// so the toggle navigates instead of rewriting the page in place. The privacy
+// pages have no such counterpart and keep the in-place translation below.
+const altUrl = document.body.dataset.altUrl;
+const pageLanguage = document.documentElement.lang === "en" ? "en" : "ro";
+const savedLanguage = localStorage.getItem("gobyde-language");
+if (altUrl && (savedLanguage === "ro" || savedLanguage === "en") && savedLanguage !== pageLanguage) {
+  window.location.replace(altUrl + window.location.search + window.location.hash);
+}
 
 function setLanguage(language) {
   currentLanguage = language;
@@ -612,7 +635,14 @@ menuButton.addEventListener("click", () => {
 });
 
 mobileMenu.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
-languageButton.addEventListener("click", () => setLanguage(currentLanguage === "ro" ? "en" : "ro"));
+languageButton.addEventListener("click", () => {
+  if (altUrl) {
+    localStorage.setItem("gobyde-language", pageLanguage === "ro" ? "en" : "ro");
+    window.location.href = altUrl + window.location.hash;
+  } else {
+    setLanguage(currentLanguage === "ro" ? "en" : "ro");
+  }
+});
 window.addEventListener("scroll", () => header.classList.toggle("scrolled", window.scrollY > 24), { passive: true });
 window.addEventListener("resize", () => { if (window.innerWidth > 820) closeMenu(); });
 
@@ -632,4 +662,4 @@ document.querySelectorAll(".reveal").forEach((element) => {
 });
 
 document.querySelector("[data-year]").textContent = new Date().getFullYear();
-setLanguage(currentLanguage);
+if (!altUrl) setLanguage(currentLanguage);

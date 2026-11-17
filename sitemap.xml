@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://gobyde.com/</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gobyde.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gobyde.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gobyde.com/" />
+  </url>
+  <url>
+    <loc>https://gobyde.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gobyde.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gobyde.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gobyde.com/" />
+  </url>
+  <url>
+    <loc>https://gobyde.com/aura-clicker</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gobyde.com/aura-clicker" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gobyde.com/en/aura-clicker" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gobyde.com/aura-clicker" />
+  </url>
+  <url>
+    <loc>https://gobyde.com/en/aura-clicker</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gobyde.com/aura-clicker" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gobyde.com/en/aura-clicker" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gobyde.com/aura-clicker" />
+  </url>
+  <url>
+    <loc>https://gobyde.com/turning-tails</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gobyde.com/turning-tails" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gobyde.com/en/turning-tails" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gobyde.com/turning-tails" />
+  </url>
+  <url>
+    <loc>https://gobyde.com/en/turning-tails</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gobyde.com/turning-tails" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://gobyde.com/en/turning-tails" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gobyde.com/turning-tails" />
+  </url>
+  <url>
+    <loc>https://gobyde.com/privacy-policy</loc>
+  </url>
+  <url>
+    <loc>https://gobyde.com/aura-clicker-privacy-policy</loc>
+  </url>
+  <url>
+    <loc>https://gobyde.com/turning-tails-privacy-policy</loc>
+  </url>
+</urlset>
